@@ -57,18 +57,16 @@ The system parameters are configured through configs/config.yaml:
 ## Model Configuration
 ```text
 enc_dim: 256            # Encoder dimension
-resnet_type: "resnet18" # ResNet architecture type
+resnet_type: 18         # ResNet architecture type
 num_classes: 2          # Number of output classes
 ```
 ## Training Configuration
 ```text
+feature_path: "path/to/features"   # Features location
 checkpoint_path: "checkpoints/"  # Model checkpoint directory
-```
-
-## Data Configuration
-```textmate
-data_path: "path/to/data"       # Dataset location
-batch_size: 32                  # Batch size for evaluation
+num_epochs: 100
+batch_size: 128
+learning_rate: 0.0003
 ```
 
 ## Running the System
