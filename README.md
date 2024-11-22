@@ -35,15 +35,18 @@ pip install -r requirements.txt
 
 ### Project Structure
 ```bash
-asvspoof2019_project/
+resnet-expts-ASVSpoof2019/
 ├── configs/
 │   └── config.yaml      # Configuration parameters
 ├── data/
 │   └── dataloader.py    # Data loading and preprocessing
-├── models/
+│    └── dataset.py      # Dataset class for ASVSpoof 2019 data
+├── model/
 │   └── resnet.py        # Model architecture definition
 ├── trainer/
 │   └── evaluator.py     # Evaluation metrics and testing
+│   └── trainer.py       # Trainer class 
+├── train.py             # Main training script
 ├── test.py              # Main testing script
 └── requirements.txt     # Project dependencies
 ```
@@ -90,18 +93,6 @@ Run the evaluation script:
 python3 test.py
 ```
 
-The script will:
-
-- Load the configuration
-
-- Initialize the data loader
-
-- Load the pre-trained model
-
-- Perform evaluation
-
-- Display results 
-
 ## Model Architecture
 The system uses a ResNet-based architecture with:
 
@@ -131,15 +122,17 @@ Common issues and solutions:
 
 ## Citation
 If you use this code in your research, please cite:
-
-Add relevant citations here
-
-Copy
-
-Insert at cursor
-text
-License
-Add your license information here
+```bibtex
+@ARTICLE{10449475,
+  author={Jelil, Sarfaraz and Sinha, Rohit and Prasanna, S. R. Mahadeva},
+  journal={IEEE Signal Processing Letters}, 
+  title={Spectro-Temporally Compressed Source Features for Replay Attack Detection}, 
+  year={2024},
+  volume={31},
+  number={},
+  pages={721-725}, 
+  doi={10.1109/LSP.2024.3370490}}
+```
 
 ## Contact
 ```html
