@@ -23,7 +23,7 @@ training:
   weight_decay: 0.0005
 
 paths:
-  features_path: '/home/sarfaraz/ASVSpoof_2019_expts/CQCC_features/PA/pkl_features/'
+  features_path: '/home/sarfaraz/ASVSpoof_2019_expts/2D_ILRCC_features/PA/pkl_features/'
   protocol_path: '/home/sarfaraz/ASVSpoof_2019_expts/data/PA/ASVspoof2019_PA_cm_protocols/'
   output_path: '/home/sarfaraz/ASVSpoof_2019_expts/deep_learning_expts/logs'
   checkpoint_path: '/home/sarfaraz/ASVSpoof_2019_expts/checkpoints'
