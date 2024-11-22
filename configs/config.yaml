@@ -1,0 +1,34 @@
+data:
+  access_type: 'PA'
+  feature_type: '2D_ILRCC'
+  feature_length: 750
+  padding: 'repeat'
+  num_workers: 8
+
+model:
+  resnet_type: '18'
+  enc_dim: 256
+  num_classes: 2
+
+training:
+  seed: 598
+  num_epochs: 100
+  batch_size: 128
+  learning_rate: 0.0003
+  lr_decay: 0.5
+  lr_decay_interval: 10
+  beta1: 0.9
+  beta2: 0.999
+  epsilon: 1e-8
+  weight_decay: 0.0005
+
+paths:
+  features_path: '/home/sarfaraz/ASVSpoof_2019_expts/CQCC_features/PA/pkl_features/'
+  protocol_path: '/home/sarfaraz/ASVSpoof_2019_expts/data/PA/ASVspoof2019_PA_cm_protocols/'
+  output_path: '/home/sarfaraz/ASVSpoof_2019_expts/deep_learning_expts/logs'
+  checkpoint_path: '/home/sarfaraz/ASVSpoof_2019_expts/checkpoints'
+
+device: 'cuda'
+
+logger:
+  log_dir: '/home/sarfaraz/ASVSpoof_2019_expts/deep_learning_expts/logs/'
