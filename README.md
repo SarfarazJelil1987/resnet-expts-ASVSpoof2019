@@ -72,12 +72,12 @@ learning_rate: 0.0003
 ## Running the System
 
 ### Data Preparation
-Download the ASVspoof 2019 dataset and extract the 2D-ILRCC features (or any feature)
+- Download the ASVspoof 2019 dataset and extract the 2D-ILRCC features (or custom feature)
 in the pickle format(.pkl).
 
-Update the feature path in config.yaml.
+- Update the feature path in config.yaml.
 
-Ensure the data is organized according to the ASVspoof 2019 protocol.
+- Ensure the data is organized according to the ASVspoof 2019 protocol.
 
 ## Model Training
 Train the model using the training script:
